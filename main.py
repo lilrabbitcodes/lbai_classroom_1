@@ -199,6 +199,45 @@ st.markdown("""
             0%, 100% { opacity: 0.3; transform: scale(1); }
             50% { opacity: 1; transform: scale(1.2); }
         }
+        
+        /* Hide Streamlit elements */
+        #MainMenu {display: none;}
+        footer {display: none !important;}
+        header {display: none !important;}
+        .stDeployButton {display: none !important;}
+        div[data-testid="stToolbar"] {display: none !important;}
+        div[data-testid="stDecoration"] {display: none !important;}
+        div[data-testid="stStatusWidget"] {display: none !important;}
+        #MainMenu, div[data-testid="stToolbar"] button {display: none !important;}
+        
+        /* Hide 'Built with Streamlit' */
+        .viewerBadge_container__1QSob {display: none !important;}
+        .stDeployButton {display: none !important;}
+        
+        /* Hide fullscreen button */
+        button[title="View fullscreen"] {display: none !important;}
+        .fullScreenFrame > div {display: none !important;}
+        
+        /* Remove default Streamlit padding */
+        .stApp {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        /* Hide hamburger menu */
+        section[data-testid="stSidebar"] {display: none !important;}
+        
+        /* Hide top right menu */
+        .stActionButton {display: none !important;}
+        
+        /* Remove extra padding */
+        .element-container {padding: 0 !important;}
+        
+        /* Ensure chat container fills space */
+        .stChatFloatingInputContainer {
+            bottom: 0 !important;
+            padding-bottom: 60px !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 
